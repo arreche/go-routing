@@ -5,7 +5,7 @@ import (
 )
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
-	// TODO: write "Hello, World!" using the http.ResponseWriter object
+	w.Write([]byte("Hello, World!"))
 }
 
 func main() {
